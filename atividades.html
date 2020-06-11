@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HEALTH TRACK</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Bootstrap">
+  <link rel="stylesheet" type="text/css" href="estilos/style-2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="http://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://getbootstrap.com.br/docs/4.1/examples/pricing/pricing.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="mb-4" src="iconeHT.png" alt width="80" height="80">
+        <a class="navbar-brand" href="#">HEALTH TRACK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alimentacao.html">Alimentação</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="atividades.html">Atividades Físicas<span class="sr-only">(Página Atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="configuracoes.html">Configurações</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <a class="nav-link" href="index.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="body-adjust pb-5">
+        <img src="atividades.png" class="rounded mx-auto d-block" alt="Imagem alimentacao">
+        <div class="bg-light marker-center"></div>
+        <h6> Aqui você encontra suas atividades físicas: </h6><br>
+        
+    
+        <div class="card-deck">
+          <div class="card bg-dark text-white">
+            <div class="card-header"><h5>Treino Cardiovascular</h5></div>
+             <div class="card-body bg-light text-dark">
+               <table class="table">
+                 <thead>
+                   <tr>
+                     <th scope="col">Atividade</th>
+                     <th scope="col">Tempo de duração</th>
+                     <th scope="col">Calorias perdidas</th>
+                     <th scope="col">Data</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">
+               <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label" for="defaultCheck1">
+                   Caminhada
+                 </label>
+               </div>
+               </th>
+               <td>30 minutos</td>
+               <td>260 kcal</td>
+               <td>07/07/2020</td>
+               </tr></tbody>
+               </table>            
+               </div>               
+             <div class="card-footer">               
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                 Incluir
+               </button>
+               <a href="#" class="btn btn-primary">Editar</a> 
+               <a href="#" class="btn btn-primary">Excluir</a>
+               <!-- Modal -->
+               <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title text-dark" id="exampleModalLabel">Incluir Treino</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     <div class="modal-body">
+                       <div class="form-group">
+                         <label for="formGroupExampleInput">Atividade</label>
+                         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o nome da atividade">
+                       </div>
+                           <div class="form-row">
+                             <div class="form-group col-md-6">
+                               <label for="inputqant4">Tempo</label>
+                               <input type="email" class="form-control" id="inputEmail4" placeholder="Insira o tempo">
+                             </div>
+                             <div class="form-group col-md-6">
+                              <label for="date">Data</label>
+                              <input type="date" class="form-control" id="date">
+                            </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                       <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+              </div> 
+              
+             </div>
+           </div>
+          <div class="card bg-dark text-white">
+            <div class="card-header"><h5>Treino de Musculação</h5></div>
+            <div class="card-body bg-light text-dark">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Atividade</th>
+                    <th scope="col">Séries</th>
+                    <th scope="col">Calorias perdidas</th>
+                    <th scope="col">Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Supino Reto
+                </label>
+              </div>
+              </th>
+              <td>3 de 10</td>
+              <td>- kcal</td>
+              <td>07/07/2020</td>
+              </tr></tbody>
+              </table>            
+              </div>               
+            <div class="card-footer">               
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                Incluir
+              </button>
+              <a href="#" class="btn btn-primary">Editar</a> 
+              <a href="#" class="btn btn-primary">Excluir</a>
+              <!-- Modal -->
+              <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Incluir Treino</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Atividade</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o nome da atividade">
+                      </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputqant4">Tempo</label>
+                              <input type="email" class="form-control" id="inputEmail4" placeholder="Insira o tempo">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="date">Data</label>
+                              <input type="date" class="form-control" id="date">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div> 
+             
+            </div>
+          </div>
+          <div class="card bg-dark text-white">
+           <div class="card-header"><h5>Outras atividades</h5></div>
+            <div class="card-body bg-light text-dark">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Atividade</th>
+                    <th scope="col">Tempo de duração</th>
+                    <th scope="col">Calorias perdidas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Yoga
+                </label>
+              </div>
+              </th>
+              <td>30 minutos</td>
+              <td>200 kcal</td>
+              </tr></tbody>
+              </table>
+           
+              </div>
+            <div class="card-footer">
+              
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                Incluir
+              </button>
+              <a href="#" class="btn btn-primary">Editar</a> 
+              <a href="#" class="btn btn-primary">Excluir</a>
+              <!-- Modal -->
+              <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Incluir Treino</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Atividade</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o nome da atividade">
+                      </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputqant4">Tempo</label>
+                              <input type="email" class="form-control" id="inputEmail4" placeholder="Insira o tempo">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+      <script src="bootstrap/js/jquery.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
